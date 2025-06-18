@@ -1,12 +1,15 @@
 /* General body styling */
-.question2,
-.Yellow,
-.Blue,
+.questions,
 .result {
     display:none;
 }
 
-
+.start-screen img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
 
 body {
     font-family: 'Oswald', sans-serif;
@@ -76,4 +79,13 @@ button {
     border-radius: 20px;
     font-size: 1em;
     font-family: 'Oswald', sans-serif;
+}
+
+button {
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #356ac3;
+    transform: scale(1.08);
 }
