@@ -1,4 +1,13 @@
 /* General body styling */
+.question2,
+.Yellow,
+.Blue,
+.result {
+    display:none;
+}
+
+
+
 body {
     font-family: 'Oswald', sans-serif;
     background-color: #f4f4f4;
@@ -13,6 +22,15 @@ body {
     color: #333;
 }
 
+.questions img {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Questions section styling */
 .questions {
     background-color: #fff;
@@ -24,6 +42,10 @@ body {
 
 .questions h4 {
     color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .questions img {
@@ -41,4 +63,17 @@ body {
     margin-top: 20px;
     border-radius: 8px;
     font-size: 1.2em;
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 28px;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
 }
