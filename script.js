@@ -83,7 +83,7 @@ Yellow.addEventListener("click", function() {
         ending.innerHTML = "Your basketball team is Lakers";
         image.src = "download (3).png";
         image.alt = "Lakers Logo";
-        body.style.backgroundColor = "blue";
+        body.style.backgroundColor = "yellow";
     }
 });
 
