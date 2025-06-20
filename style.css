@@ -1,6 +1,7 @@
 /* General body styling */
 .questions,
-.result {
+.result,
+#restart-btn {
     display:none;
 }
 

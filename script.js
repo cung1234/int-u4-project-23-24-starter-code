@@ -38,35 +38,41 @@ start.addEventListener("click", function() {
     question.style.display = "block";
     question1.style.display = "none";
     question2.style.display = "none";
+    restart.style.display = "none";
 });
 
 
 minor.addEventListener("click", function() {
     question1.style.display = "block";
     question3.style.display = "none";
+    restart.style.display = "none";
 });
 
 adult.addEventListener("click", function() {
     question1.style.display = "block";
     question3.style.display = "none";
+    restart.style.display = "none";
 });
 
 east.addEventListener('click', function() {
     question2.style.display = "block";
     question1.style.display = "none";
     selectedDirection = "east";
+    restart.style.display = "none";
 });
 
 West.addEventListener("click", function() {
     question2.style.display = "block";
     question1.style.display = "none";
     selectedDirection = "west";
+    restart.style.display = "none";
 });
 
 Yellow.addEventListener("click", function() {
     question2.style.display = "none";
     question.style.display = "none";
     results.style.display = "block";
+    restart.style.display = "block";
     if (selectedDirection == "east") {
         ending.innerHTML = "Your basketball team is Pacers";
         image.src = "download (1).png";
@@ -85,6 +91,7 @@ Blue.addEventListener("click", function() {
     question2.style.display = "none";
     question.style.display = "none";
     results.style.display = "block";
+    restart.style.display = "block";
     if (selectedDirection === "east") {
         ending.innerHTML = "Your basketball team is Knicks";
         image.src = "download (4).png";
@@ -101,3 +108,15 @@ Blue.addEventListener("click", function() {
 });
 
 
+let restart = document.querySelector("#restart-btn");
+
+restart.addEventListener("click", function() {
+    results.style.display = "none";
+    startScreen.style.display = "block";
+    question1.style.display = "none";
+    question2.style.display = "none";
+    question3.style.display = "none";
+    question.style.display = "none";
+    restart.style.display = "none";
+    body.style.backgroundColor = "";
+});
